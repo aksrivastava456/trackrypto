@@ -1,0 +1,67 @@
+.searchInput {
+  border-radius: 8px !important;
+  font-size: 1.08rem;
+}
+
+.cryptoTableWrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  background: rgba(20, 30, 48, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  padding: 18px 0 8px 0;
+  overflow-x: auto; /* enables horizontal scroll on small screens */
+}
+
+.cryptoTable {
+  width: 100%;
+  min-width: 600px; /* ensures table doesn't squish too much */
+  border-collapse: collapse;
+}
+
+.cryptoTable :global(thead),
+.cryptoTable :global(tbody),
+.cryptoTable :global(tr),
+.cryptoTable :global(td),
+.cryptoTable :global(th) {
+  background: transparent !important;
+}
+
+.cryptoTable th,
+.cryptoTable td {
+  font-weight: 600 !important;
+  color: #fff !important;
+  padding: 12px 8px !important;
+  border-bottom: 1px solid #2c3e50 !important;
+}
+
+.cryptoTable th {
+  color: #fbc531 !important;
+  background: transparent !important;
+  font-size: 1.08rem;
+  letter-spacing: 1px;
+}
+
+.cryptoTable tr:hover {
+  background: rgba(251, 197, 49, 0.08) !important;
+  transition: background 0.2s;
+}
+
+.cryptoTable td.positive {
+  color: #46c24a !important;
+}
+
+.cryptoTable td.negative {
+  color: #ca3c3a !important;
+}
+
+@media (max-width: 600px) {
+  .cryptoTable th,
+  .cryptoTable td {
+    padding: 8px 4px !important;
+    font-size: 0.95rem !important;
+  }
+  .cryptoTableWrapper {
+    padding: 6px 0 4px 0;
+  }
+}

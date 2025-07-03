@@ -1,0 +1,8 @@
+.coinCard {
+  background: rgba(20, 30, 48, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 2px 22px 15px 22px;
+  margin: 0 auto 32px auto;
+  max-width: 600px;
+}

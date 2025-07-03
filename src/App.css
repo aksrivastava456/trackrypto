@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #232526 0%, #1c92d2 100%);
+}
+
+.app > *:last-child {
+  margin-top: auto;
+}

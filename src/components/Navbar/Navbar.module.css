@@ -1,0 +1,47 @@
+.myNavbar {
+  background: linear-gradient(90deg, #232526 0%, #1c92d2 100%);
+  box-shadow: 0 2px 12px rgba(44,83,100,0.08);
+}
+
+.brandLogo {
+  margin-left: 5vw;
+}
+
+.listItems {
+  margin-left: 8vw;
+}
+
+.signUpButton {
+  background: linear-gradient(90deg, #fbc531 0%, #f7971e 100%);
+  color: #232526 !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 22px;
+  transition: background 0.2s;
+}
+
+.signUpButton:hover {
+  background: linear-gradient(90deg, #f7971e 0%, #fbc531 100%);
+  color: #fff !important;
+}
+
+.currencySelect {
+  margin-left: auto;
+  background-color: #232526 !important;
+  color: #fbc531 !important;
+  font-weight: 600 !important;
+  border: 1.5px solid #fbc531 !important;
+  border-radius: 6px !important;
+}
+
+/* Reset margin on small screens */
+@media (max-width: 991.98px) {
+  .listItems {
+    margin-left: 5vw;
+  }
+
+  .signUpButton {
+    margin-left: 6.3vw;
+  }
+}

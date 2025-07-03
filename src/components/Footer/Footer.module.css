@@ -1,0 +1,11 @@
+.footer {
+  color: #010406;
+  border-top: 1px solid #291919;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.text {
+  font-weight: 500;
+  letter-spacing: 1px;
+}

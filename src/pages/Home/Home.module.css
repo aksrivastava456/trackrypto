@@ -55,6 +55,12 @@
   color: #ca3c3a !important;
 }
 
+.coinSymbol {
+  color: #f1b5ec !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 @media (max-width: 600px) {
   .cryptoTable th,
   .cryptoTable td {

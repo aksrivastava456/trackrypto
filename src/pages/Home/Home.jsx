@@ -88,7 +88,9 @@ const Home = () => {
                     >
                       {coin.name}
                     </Link>{" "}
-                    <span className="text-uppercase text-muted">
+                    <span
+                      className={`${styles.coinSymbol} text-uppercase`}
+                    >
                       ({coin.symbol})
                     </span>
                   </td>

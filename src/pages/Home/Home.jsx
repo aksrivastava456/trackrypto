@@ -75,12 +75,14 @@ const Home = () => {
                 <tr key={coin.id}>
                   <td>{coin.market_cap_rank}</td>
                   <td>
-                    <img
-                      src={coin.image}
-                      alt={coin.name}
-                      width={24}
-                      style={{ marginRight: 8, verticalAlign: "middle" }}
-                    />
+                    <Link to={`/coin/${coin.id}`}>
+                      <img
+                        src={coin.image}
+                        alt={coin.name}
+                        width={24}
+                        style={{ marginRight: 8, verticalAlign: "middle" }}
+                      />
+                    </Link>
                     <Link
                       to={`/coin/${coin.id}`}
                       className="text-white fw-bold"
@@ -88,11 +90,13 @@ const Home = () => {
                     >
                       {coin.name}
                     </Link>{" "}
-                    <span
+                    <Link
+                      to={`/coin/${coin.id}`}
                       className={`${styles.coinSymbol} text-uppercase`}
+                      style={{ marginLeft: 4, textDecoration: "none" }}
                     >
                       ({coin.symbol})
-                    </span>
+                    </Link>
                   </td>
                   <td>
                     {currencySymbols[currency]}{" "}

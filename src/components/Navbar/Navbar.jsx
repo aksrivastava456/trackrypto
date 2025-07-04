@@ -1,18 +1,19 @@
 import { useContext } from "react";
 import styles from "./Navbar.module.css";
 import { CryptoContext } from "../../context/CryptoContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { currency, setCurrency } = useContext(CryptoContext);
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.myNavbar}`}>
       <div className={`container-fluid ${styles.brandContainer}`}>
-        <a className={`navbar-brand ${styles.brandLogo}`} href="#">
+        <Link className={`navbar-brand ${styles.brandLogo}`} to="/">
           📈{" "}
           <span className="fs-3 fw-bold text-danger">
             Track<span className="text-warning">rypto</span>
           </span>
-        </a>
+        </Link>
         <select
           className={`form-select w-auto me-2 d-lg-none ${styles.currencySelect}`}
           value={currency}
@@ -38,9 +39,9 @@ const Navbar = () => {
             className={`fw-semibold navbar-nav mb-2 mb-lg-0 ${styles.listItems}`}
           >
             <li className="nav-item mx-2">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item mx-2">
               <a className="nav-link" href="#">

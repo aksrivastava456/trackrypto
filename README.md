@@ -1,12 +1,35 @@
-# React + Vite
+# 📊 Trackrypto – Crypto Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trackrypto is a React-based cryptocurrency tracker that displays real-time data for the top 100 cryptocurrencies using the CoinGecko API.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://trackrypto.vercel.app](https://trackrypto.vercel.app)  
+*(Authentication features are in progress and not part of this deployed version.)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React  
+- Bootstrap  
+- CoinGecko API  
+- *(Planned)* Firebase Authentication
+
+---
+
+## 🔍 Features
+
+- Real-time cryptocurrency data  
+- Live search and filter  
+- Responsive layout with Bootstrap  
+- *(Coming soon)* Login/Signup with Firebase  
+- *(Coming soon)* Favorites section
+
+---
+
+## 📁 Run Locally
+
+```bash
+git clone https://github.com/aksrivastava456/trackrypto.git
+cd trackrypto
+npm install
+npm start
